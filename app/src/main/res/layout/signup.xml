@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_scrollView"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context=".SignupActivity">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_newUserName"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_newUserName"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_toRightOf="@+id/tv_newUserName"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_newPassword"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_newUserName"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_newPassword"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_newUserName"
+            android:layout_toRightOf="@+id/tv_newPassword"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_confirmPassword"
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et_newPassword"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="ConfirmPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_confirmPassword"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et_newPassword"
+            android:layout_toRightOf="@+id/tv_confirmPassword"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_confirmPassword"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="First Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_confirmPassword"
+            android:layout_toRightOf="@+id/tv_first_name"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_first_name"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Last Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et_first_name"
+            android:layout_toRightOf="@+id/tv_last_name"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_last_name"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Gender"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_below="@+id/et_last_name"
+            android:layout_toRightOf="@+id/tv_gender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r_male"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/r_female"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Female" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tv_DOB"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_gender"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="DOB"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Button
+            android:id="@+id/b_datepick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/tv_DOB"
+            android:text="SELECT"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_datepick"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/b_datepick"
+            android:paddingTop="16dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_DOB"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/b_datepick"
+            android:layout_toRightOf="@+id/tv_address"
+            android:inputType="textPostalAddress"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_postcode"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_address"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Postcode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_postcode"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_address"
+            android:layout_toRightOf="@+id/tv_postcode"
+            android:inputType="number"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="83dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/tv_postcode"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="State"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Spinner
+            android:id="@+id/sp_state"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et_postcode"
+            android:layout_toRightOf="@+id/tv_state"
+            android:spinnerMode="dialog"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Button
+            android:id="@+id/b_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_state"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>

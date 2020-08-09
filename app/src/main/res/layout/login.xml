@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    tools:context=".LoginActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="325dp"
+        android:layout_height="306dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/et_UserName"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:hint="User Name(Email)"/>
+
+    <EditText
+        android:id="@+id/et_PassWord"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp" />
+
+
+    <Button
+        android:id="@+id/b_Login"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:text="Log in" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="338dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:text="Or Touch Here to Sign Up Now" />
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/moviePosterMemoir"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:baselineAligned="false"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/movieNameMemoir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="movieNameMemoir"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/movieReleaseDateMemoir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="movieReleaseDateMemoir"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <TextView
+            android:id="@+id/movieWatchDateTimeMemoir"
+            android:layout_width="317dp"
+            android:layout_height="43dp"
+            android:text="Select the memoir date and time below: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/pickdatememoirbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="DATE" />
+
+        <Button
+            android:id="@+id/picktimememoirbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TIME" />
+
+        <TextView
+            android:id="@+id/pickedDate"
+            android:visibility="invisible"
+            android:layout_width="317dp"
+            android:layout_height="43dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/pickedTime"
+            android:visibility="invisible"
+            android:layout_width="317dp"
+            android:layout_height="43dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="317dp"
+            android:layout_height="43dp"
+            android:text="Select the cinema below: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+            android:id="@+id/cinemaSpinnerMemoir"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/addnewcinemamemoirbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ADD A NEW CINEMA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/commentMemoir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Write your comment here" />
+
+        <TextView
+            android:layout_width="317dp"
+            android:layout_height="43dp"
+            android:text="Pick rating stars below: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/ratingMemoir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/ratingbarmemoir"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srb_numberOfStars="10"
+            app:srb_stepSize="0.5"
+            app:srb_rating="5"
+            app:srb_fillColor="#FF6347"/>
+
+        <Button
+            android:id="@+id/addmemoirbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD MEMOIR" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

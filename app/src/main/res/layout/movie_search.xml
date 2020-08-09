@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieSearchHeader"
+        android:layout_width="60dp"
+
+
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/movieSearchHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:drawableLeft="@drawable/ic_menu_slideshow"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tap to Input Movie Name" />
+
+    <Button
+        android:id="@+id/tmdbbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar"
+        android:layout_centerHorizontal="true"
+        android:text="SEARCH" />
+
+    <ListView
+        android:id="@+id/SearchListView"
+        android:layout_width="405dp"
+        android:layout_height="552dp"
+        android:layout_below="@id/tmdbbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp" />
+
+</RelativeLayout>

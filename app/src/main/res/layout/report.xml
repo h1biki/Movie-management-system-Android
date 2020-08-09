@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:id="@+id/movieDetailScrollView">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="378dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="SELECT A START DATE AND AN END DATE TO GATHER REPORT" />
+
+        <Button
+            android:id="@+id/startdatereport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START DATE">
+        </Button>
+
+        <Button
+            android:id="@+id/enddatereport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="END DATE">
+        </Button>
+
+        <TextView
+            android:id="@+id/startdatetv"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/enddatetv"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:text="" />
+
+        <Button
+            android:id="@+id/reportpie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET THE REPORT(Pie)">
+        </Button>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="SELECT A YEAR TO GATHER BARCHART" />
+
+        <Spinner
+            android:id="@+id/yearspinnerreport"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/reportbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET THE REPORT(Bar)">
+        </Button>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </LinearLayout>
+</ScrollView>
